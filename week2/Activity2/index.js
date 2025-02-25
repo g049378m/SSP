@@ -3,5 +3,20 @@
 //Import Express
 import express from "express";
 
-//Create an Exprees app
- 
+//Application Constants
+const app = express();
+const port = 8080;
+
+//Routes
+app.get("/", (req, res) =>
+{
+    res.send("<h1>Hello World</h1>");
+
+}) ;
+
+//Start Server
+app.listen(port, () =>
+{ 
+    console.log(`Express server listening at ${port}`);
+
+});
