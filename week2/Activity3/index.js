@@ -24,12 +24,12 @@ app.get("/login", (req, res) => {
 
 // Tickets route
 app.get("/tickets", (req, res) => {
-    res.send("<h1>Tickets</h1>");
+    res.redirect("/login");
 });
 
 // Users route
 app.get("/users", (req, res) => {
-    res.send("<h1>Users</h1>");
+    res.redirect(302, "/login");
 });
 
 // Start the server
