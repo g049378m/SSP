@@ -1,0 +1,10 @@
+<%- include("partials/header") %>
+
+<h1>Oops!</h1>
+<h2>Error <%= code %>: <%= message %></h2>
+<% if (url) { %>
+    <p>This happened on: <%= url %></p>
+<% } %>
+<p>Use the navigation bar above to go somewhere else.</p>
+
+<%- include("partials/footer") %>
